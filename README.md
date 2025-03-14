@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# Calculadora de Consumos y Propinas 📱
+ 
+## Descripción
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una aplicación web desarrollada con TypeScript y React que permite calcular el costo total de una cuenta incluyendo propinas. Se ha utilizado Vite como entorno de desarrollo, Tailwind CSS para los estilos y se ha implementado un custom hook optimizado con useMemo para mejorar el rendimiento.
 
-Currently, two official plugins are available:
+### Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React con TypeScript
 
-## Expanding the ESLint configuration
+- Vite para el desarrollo rápido
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Tailwind CSS para los estilos
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Custom Hook para la lógica de cálculo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- useMemo para optimización del rendimiento
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Características
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Ingreso del costo total de la cuenta
+
+- Selección de porcentaje de propina
+
+- Cálculo dinámico del total con propina incluida
+
+- Optimización con useMemo para evitar cálculos innecesarios
+
+- Interfaz responsiva y estilizada con Tailwind CSS
+### Instalación y ejecución
+
+Clonar el repositorio:
+
+`git clone https://github.com/tu-usuario/calculadora-consumos.git `
+
+
+Navegar al directorio del proyecto:
+
+`calculadora-consumos`
+
+
+Instalar dependencias:
+
+`npm install`
+
+Ejecutar en modo desarrollo: 
+
+`npm run dev`
+
+**Desarrollado por:** Agustina Mena 👩🏽‍💻
